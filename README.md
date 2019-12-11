@@ -44,7 +44,7 @@ Before starting make sure the following files are available in your project dire
 * `.htmlhintrc`: Configuration for the HTML linter
 * `.stylelintrc.json`: Configuration for the CSS linter
 * `.eslintrc`: Configuration file for the JavaScript linter
-* `.travis.yml`: Automatically run the linters on GitHub as well. If all goes well, you earn a  ✔️ next to your commit.
+* `.github/`: Automatically run the linters on GitHub as well. If all goes well, you earn a  ✔️ next to your commit.
 
 First check with a `git pull ...` command to see if the teacher added the files to the project. If the files are not present, copy-paste them from this projects [configuration-files](./configuration-files) into your project directory.
 
@@ -146,16 +146,16 @@ code --install-extension dbaeumer.vscode-eslint
 
 ### Checks on GitHub
 
-You can even run the linters when uploading (pushing) your code to GitHub. This is done automatically if an `.travis.yaml` is present in your project.
+You can even run the linters when uploading (pushing) your code to GitHub. This is done automatically if an `.github/` is present in your project with the correct configuration.
 
 It takes a minute or two to see the results. The results are shown next to your commit messages on GitHub.
 
 Note that the checkmark only will show ✔️ if ALL checks succeed. When your project contains the smalles error or warning, you will see a ❌
 
-![Travis lint check result](img/travis-result.jpg)
+![GitHub lint check result](img/travis-result.jpg)
 
 Or in your commit history.
 
-![Travis lint check result](img/travis-results-commits.jpg)
+![GitHub lint check result](img/travis-results-commits.jpg)
 
 This allows you to see when you introduce any problems, and when they are fixed.
