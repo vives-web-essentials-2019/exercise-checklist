@@ -1,0 +1,23 @@
+name: Linter
+
+on: [push]
+
+jobs:
+  build:
+    name: Linters
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - run: npm install
+    - name: HTML
+      run: npm run lint-html
+      if: always()
+    - name: CSS
+      run: npm run lint-css
+      if: always()
+    - name: JavaScript
+      run: npm run lint-js
+      if: always()
+
+      
+
