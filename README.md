@@ -140,7 +140,7 @@ In order to run the linters inside VS Code, you need to install the correct [Ext
 
 ```bash
 code --install-extension mkaufman.htmlhint
-code --install-extension dbaeumer.mkaufman.htmlhint
+code --install-extension thibaudcolas.stylelint
 code --install-extension dbaeumer.vscode-eslint
 ```
 
